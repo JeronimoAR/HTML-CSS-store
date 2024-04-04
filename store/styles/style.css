@@ -4,6 +4,8 @@ html {
     font-family: "Inter", sans-serif;
 }
 
+/* Encabezado */
+
 header {
     padding-top: 20px;
     background-color: #ff3b3c;
@@ -66,14 +68,12 @@ header {
     text-decoration: underline;
 }
 
+/* Hero section */
+
 section {
     height: 340px;
 }
 
-main {
-    padding-top: 20px;
-    height: auto;
-}
 
 .container {
     width: 100%;
@@ -110,10 +110,22 @@ section#hero .container {
     line-height: 80px;
 }
 
+/* Seccion principal */
+
+main {
+    padding: 50px;
+    height: auto;
+}
+
 .product-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
+}
+
+.product-container a {
+    text-decoration: none;
+    color: initial;
 }
 
 .product-card {
@@ -183,6 +195,7 @@ footer {
 }
 
 footer .container {
+    width: 1000px;
     display: flex;
     flex-direction: column;
 }
@@ -190,8 +203,9 @@ footer .container {
 .columns-container {
     flex: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .columns-container .col ul {
@@ -229,10 +243,6 @@ footer .container {
         width: 300px;
     }
 
-    .container {
-        width: 100%;
-    }
-
     .product-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -256,10 +266,6 @@ footer .container {
     .title-container span:last-child {
         font-size: 80px;
         line-height: 80px;
-    }
-
-    .container {
-        width: 100%;
     }
 
     .product-container {
