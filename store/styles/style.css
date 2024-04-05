@@ -142,7 +142,6 @@ main {
     object-position: center;
 }
 
-
 .product-info {
     padding: 20px;
     box-sizing: border-box;
@@ -190,7 +189,6 @@ main {
 
 footer {
     /* Hexadecimal color code*/
-    min-height: 368px;
     background-color: #7525a7;
 }
 
@@ -203,7 +201,7 @@ footer .container {
 .columns-container {
     flex: 1;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -246,6 +244,10 @@ footer .container {
     .product-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    footer .container{
+        width: 500px;
+    }
 }
 
 /* vista de telefono */
@@ -271,4 +273,9 @@ footer .container {
     .product-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    footer .container{
+        width: 230px;
+    }
+
 }
